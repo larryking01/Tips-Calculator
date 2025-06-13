@@ -1,0 +1,111 @@
+@use '../../../styling/reusables' as *;
+
+
+.user-input-wrapper {
+    width: 27rem;
+    height: 25rem;
+}
+
+.bill {
+    width: 2.5rem;
+    height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.bill-input-div {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.bill-input {
+    width: 24rem;
+    height: 3rem;
+    padding: 0 3rem;
+    background-color: $custom-tip-option-bg;
+    border: none;
+}
+
+.dollar-img {
+    position: absolute;
+    top: 1rem;
+    left: 0.4rem;
+}
+
+.select-tip-text {
+    font-size: 1rem;
+    color: $secondary-info-font-col;
+    margin-bottom: 1rem;
+}
+
+.tip-options-div {
+    width: 23.7rem;
+    // width: 100%;
+    height: 7rem;
+    // background-color: green;
+    display: flex;
+    gap:0.87rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+
+}
+
+
+.tip-option-btn {
+    width: 7.3rem;
+    height: 3rem;
+    background-color: $tip-option-btn-col;
+    color: $white;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+
+.custom-tip-option {
+    width: 7.3rem;
+    height: 3rem;
+    background-color: $custom-tip-option-bg;
+    color: $secondary-info-font-col;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+
+@media (max-width: 768px) {
+    .user-input-wrapper {
+        width: 21rem;
+        height: 33rem;
+    }
+
+    
+    .bill-input {
+        // width: 20rem;
+        width: 100%;
+        height: 3rem;
+        padding: 0 3rem;
+    }
+
+    .tip-options-div {
+        // width: 20rem;
+        width: 100%;
+        margin-bottom: 2.5rem;
+        height: 13.5rem;
+    }
+
+    .tip-option-btn {
+        width: 10rem;
+    }
+
+    .custom-tip-option {
+        width: 10rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+
+}

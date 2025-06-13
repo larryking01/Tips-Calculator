@@ -1,0 +1,43 @@
+@use '../styling/reusables' as *;
+
+main {
+    width: 100%;
+
+    h3 {
+        width: 5.375rem;
+        height: 3.313rem;
+        color: $header-font-col;
+        font-weight: bold;
+        margin: 4rem auto 2rem auto;
+    }
+    
+}
+
+
+.content {
+    max-width: 57.5rem;
+    height: 30rem;
+    background-color: $white;
+    border-radius: 1.6rem;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+/* responsiveness */
+@media (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 24rem;
+        height: 90vh;
+        padding: 1.5rem;
+    }
+}
